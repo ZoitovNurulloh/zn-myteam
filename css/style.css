@@ -186,12 +186,19 @@ input:-webkit-autofill:focus {
 /* SITE-HEADER */
 .site-header {
   padding-top: 73px;
-  padding-bottom: 73px;
+  padding-bottom: 250px;
+  margin-bottom: 500px;
+  background-image: url(/img/additional-pictures-1.svg),
+  url(/img/additional-pictures-2.svg);
+background-repeat: no-repeat;
+background-position: -100px  266px,
+    917px 650px;
 }
 
 .site-header__container {
   display: flex;
   align-items: center;
+  padding-bottom:65px;
 }
 
 .site-header__logo {
@@ -231,6 +238,35 @@ input:-webkit-autofill:focus {
   cursor: pointer;
 }
 
+
+/* HERO */
+.hero {
+  padding-top: 65px;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+}
+
+.hero__title {
+  width: 635px;
+  font-size: 100px;
+  line-height: 100px;
+  margin-top: 0;
+  margin-right: 30px;
+}
+
+.hero__title--colored {
+  color: var(--light-coral);
+}
+
+.hero__info {
+  width: 445px;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 0;
+}
 
 /* MAIN-CONTENT */
 
