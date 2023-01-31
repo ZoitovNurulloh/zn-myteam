@@ -183,22 +183,40 @@ input:-webkit-autofill:focus {
 }
 
 
+/* BLUR-STYLES */
+.blur {
+  position: absolute;
+  width: 50px;
+  height: 4px;
+}
+
+.blue--blur {
+  top: 250px;
+  right: 599px;
+  background-color: var(--rapture-blue);
+}
+
+.red--blur {
+  top: 140px;
+  left: 206px;
+  background-color: var(--light-coral);
+}
+
 /* SITE-HEADER */
 .site-header {
+  position: relative;
   padding-top: 73px;
-  padding-bottom: 250px;
-  margin-bottom: 500px;
+  padding-bottom: 165px;
   background-image: url(/img/additional-pictures-1.svg),
   url(/img/additional-pictures-2.svg);
 background-repeat: no-repeat;
-background-position: -100px  266px,
-    917px 650px;
+background-position: -60px  250px,
+    960px 600px;
 }
 
 .site-header__container {
   display: flex;
   align-items: center;
-  padding-bottom:65px;
 }
 
 .site-header__logo {
@@ -229,6 +247,8 @@ background-position: -100px  266px,
 }
 
 .sitenav__link {
+  font-size: 18px;
+  line-height: 28px;
   text-decoration: none;
   color: #fff;
 }
@@ -241,7 +261,7 @@ background-position: -100px  266px,
 
 /* HERO */
 .hero {
-  padding-top: 65px;
+  padding-top: 130px;
 }
 
 .hero__container {
@@ -274,7 +294,78 @@ background-position: -100px  266px,
   flex-grow: 1;
 }
 
+/* BUILD-SECTION */
+.build {
+  position: relative;
+  padding-top: 198px;
+  padding-bottom: 140px;
+  background-color: var(--black);
+}
 
+.build__container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+}
+
+.build__title {
+  width: 445px;
+  margin-top: 0;
+  margin-right: 125px;
+  font-weight: 700px;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.build__list {
+  width: 540px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.build__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.build__item::before {
+  position: absolute;
+  z-index: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  content: "";
+}
+
+.build__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.build__item-img {
+  top: -5px;
+  left: -16px;
+  position: absolute;
+}
+
+.build__item-title-info-wrapper {
+  margin-left: 100px;
+}
+
+.build__item-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--light-coral);
+}
+
+.build__item-info {
+  margin: 0;
+  opacity: 0.8;
+}
 
 /* RETINA BACKGROUND IMAGES */
 @media
