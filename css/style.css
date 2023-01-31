@@ -183,25 +183,6 @@ input:-webkit-autofill:focus {
 }
 
 
-/* BLUR-STYLES */
-.blur {
-  position: absolute;
-  width: 50px;
-  height: 4px;
-}
-
-.blue--blur {
-  top: 250px;
-  right: 599px;
-  background-color: var(--rapture-blue);
-}
-
-.red--blur {
-  top: 140px;
-  left: 206px;
-  background-color: var(--light-coral);
-}
-
 /* SITE-HEADER */
 .site-header {
   position: relative;
@@ -282,10 +263,20 @@ background-position: -60px  250px,
 }
 
 .hero__info {
+  position: relative;
   width: 445px;
   font-size: 18px;
   line-height: 28px;
   margin-top: 0;
+}
+
+.hero__info::before {
+  position: absolute;
+  top: -78px;
+  width: 50px;
+  height: 4px;
+  background-color: var(--rapture-blue);
+  content: "";
 }
 
 /* MAIN-CONTENT */
