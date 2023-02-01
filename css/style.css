@@ -165,7 +165,7 @@ input:-webkit-autofill:focus {
 
 .button--light {
   border: 2px solid var(--black);
-  background-color: #fff;
+  background-color: transparent;
   color: var(--black);
 }
 
@@ -291,6 +291,9 @@ background-position: -60px  250px,
   padding-top: 198px;
   padding-bottom: 140px;
   background-color: var(--black);
+  background-image: url(/img/additional-pictures-3.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 0 right -100px;
 }
 
 .build__container {
@@ -356,6 +359,103 @@ background-position: -60px  250px,
 .build__item-info {
   margin: 0;
   opacity: 0.8;
+}
+
+
+/* COMMENTS */
+.comments {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.comments__title {
+  margin: 0;
+  margin-bottom: 92px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.comments__title-colored {
+  color: var(--rapture-blue);
+}
+
+.comments__list {
+  display: flex;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.comments__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comments__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.comments__item-comment {
+  position: relative;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.comments__item-comment::before {
+  position: absolute;
+  z-index: -1;
+  width: 67px;
+  height: 56px;
+  background-image: url(/img/icon-quotes.svg);
+  top: -38px;
+  left: 140px;
+  content:"";
+}
+
+.comments__item-name {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--rapture-blue);
+  text-transform: capitalize;
+}
+
+.comments__item-field {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.comments__item-img {
+  border-radius: 50%;
+}
+
+
+/* STARTED */
+.started {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-color: var(--light-coral);
+}
+
+.started__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.started__title {
+  margin: 0;
+  margin-right: 260px;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--black);
 }
 
 /* RETINA BACKGROUND IMAGES */
