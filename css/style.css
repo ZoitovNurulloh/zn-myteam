@@ -188,11 +188,6 @@ input:-webkit-autofill:focus {
   position: relative;
   padding-top: 73px;
   padding-bottom: 73px;
-  /* background-image: url(/img/additional-pictures-1.svg),
-  url(/img/additional-pictures-2.svg);
-background-repeat: no-repeat;
-background-position: -60px  250px,
-    960px 600px; */
 }
 
 .site-header__container {
